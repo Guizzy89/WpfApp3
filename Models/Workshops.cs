@@ -14,6 +14,6 @@ namespace WpfApp3.Models
         public WorkshopTypes WorkshopType { get; set; }
         public int StuffCount { get; set; }
 
-        public ICollection<ProductWorkshops> ProductWorkshops { get; set; } = new List<ProductWorkshops>();
+        public ICollection<ProductWorkshops> ProductWorkshops { get; set; } = new List<ProductWorkshops>(); // Теперь ProductWorkshops сразу содержит пустой List<ProductWorkshops>, и можно безопасно добавлять элементы.
     }
 }

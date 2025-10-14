@@ -10,7 +10,7 @@ namespace WpfApp3.Models
     {
         public int Article { get; set; }
         public string Name { get; set; }
-        public ProductTypes ProductType { get; set; }
+        public ProductTypes ProductType { get; set; }   // Навигационное свойство к типу продукта
         public int ProductTypeId { get; set; }
         public decimal MinimalCost { get; set; }
         public MaterialTypes MaterialType { get; set; }

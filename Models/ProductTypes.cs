@@ -12,6 +12,6 @@ namespace WpfApp3.Models
         public string Name { get; set; }
         public decimal Coefficient { get; set; }
 
-        public ICollection<Products> Products { get; set; } = new List<Products>();
+        public ICollection<Products> Products { get; set; } = new List<Products>(); // Теперь Products сразу содержит пустой List<Products>, и можно безопасно добавлять элементы.
     }
 }
