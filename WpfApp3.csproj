@@ -8,4 +8,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Комфорт.ico" />
+    <None Remove="Комфорт.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Комфорт.ico" />
+    <Resource Include="Комфорт.png" />
+  </ItemGroup>
+
 </Project>
