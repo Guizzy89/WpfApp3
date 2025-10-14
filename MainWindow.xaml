@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Icon="/Комфорт.ico">
+        Title="MainWindow" Height="450" Width="800" Icon="/Комфорт.ico" ResizeMode="NoResize">
     <Grid>
         <Image x:Name="Logo" Height="100" Width="100" RenderTransformOrigin="-1.529,-0.235" Source="/Комфорт.png" Margin="48,49,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <Button x:Name="Exit" Content="Выйти" Margin="0,0,24,36" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="122" Click="Exit_Click"/>
