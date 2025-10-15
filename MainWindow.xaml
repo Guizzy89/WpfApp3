@@ -11,8 +11,8 @@
         <Button x:Name="Exit" Content="ВЫЙТИ" Margin="0,0,24,27" Height="34" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="122" Click="Exit_Click" FontSize="18" FontWeight="Bold"/>
         <TextBlock TextWrapping="Wrap" Text="COMFORT" Margin="0,10,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Center" Width="316" FontSize="20" TextAlignment="Center" FontWeight="Bold"/>
         <TextBlock x:Name="EnterName" TextWrapping="Wrap" Text="Введите Ваше имя" Margin="0,147,0,0" HorizontalAlignment="Center" Width="206" TextAlignment="Center" FontSize="20" Height="24" VerticalAlignment="Top"/>
-        <TextBox x:Name="UserEnterTheName" TextWrapping="Wrap" Margin="0,184,0,0" TextChanged="TextBox_TextChanged_1" ForceCursor="True" Height="33" VerticalAlignment="Top" HorizontalAlignment="Center" Width="206"/>
-        <Button x:Name="Enter" Content="ВХОД" Margin="339,248,0,0" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="122" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="UserEnterTheName" TextWrapping="Wrap" Margin="0,184,0,0" TextChanged="TextBox_TextChanged" ForceCursor="True" Height="33" VerticalAlignment="Top" HorizontalAlignment="Center" Width="206"/>
+        <Button x:Name="Enter" Content="ВХОД" Margin="339,248,0,0" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="122" FontWeight="Bold" FontSize="16" Click="Enter_Click"/>
 
     </Grid>
 </Window>

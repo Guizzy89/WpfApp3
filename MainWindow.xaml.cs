@@ -40,9 +40,11 @@ namespace WpfApp3
 
         }
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void Enter_Click(object sender, RoutedEventArgs e)
         {
-
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Close();
         }
     }
 }
