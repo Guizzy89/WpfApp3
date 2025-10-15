@@ -23,7 +23,16 @@ namespace WpfApp3
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            MessageBoxResult result = MessageBox.Show(
+                "Вы точно хотите закрыть приложение?",
+                "Подтвердите выход",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }
