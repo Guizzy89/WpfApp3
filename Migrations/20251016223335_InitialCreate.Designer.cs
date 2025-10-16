@@ -10,7 +10,7 @@ using WpfApp3.Data;
 namespace WpfApp3.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251014171316_InitialCreate")]
+    [Migration("20251016223335_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

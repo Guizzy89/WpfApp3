@@ -21,7 +21,7 @@ namespace WpfApp3
             InitializeComponent();
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)   // Обработчик события кнопки "Выход"
         {
             MessageBoxResult result = MessageBox.Show(
                 "Вы точно хотите закрыть приложение?",
@@ -35,16 +35,25 @@ namespace WpfApp3
             }
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)         // Обработчик события изменения текста в TextBox
         {
 
         }
 
-        private void Enter_Click(object sender, RoutedEventArgs e)
+        private void Enter_Click(object sender, RoutedEventArgs e)                      // Обработчик события кнопки "Вход"
         {
-            Window1 window1 = new Window1();
-            window1.Show();
-            this.Close();
+            if (UserEnterTheName.Text.Length < 1)                                       // Проверка на ввод имени пользователя
+            {
+                MessageBox.Show("Введите имя пользователя", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            else                                                                        // Если имя введено, открываем новое окно и закрываем текущее
+            {
+                Window1 window1 = new Window1();    // Создание нового окна
+                window1.Show();                     // Открытие нового окна
+                this.Close();                       // Закрытие текущего окна
+            }
+                            
         }
     }
 }

@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800" ResizeMode="CanResizeWithGrip" WindowStyle="ThreeDBorderWindow">
+        Title="Window1" Height="450" Width="800" ResizeMode="CanResizeWithGrip" WindowStyle="ThreeDBorderWindow" Icon="/Комфорт.ico">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="171*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ExitToStartMenu" Content="В МЕНЮ" Margin="0,0,24,27" Height="34" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="122" Click="Exit_Click" FontSize="18" FontWeight="Bold" Grid.Column="1"/>
+        <Image x:Name="Logo" Height="108" Width="110" RenderTransformOrigin="-1.529,-0.235" Source="/Комфорт.png" Margin="38,41,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
+        <Button x:Name="ExitToStartMenu_Копировать" Content="В МЕНЮ" Margin="0,0,24,27" Height="34" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="122" Click="Exit_Click" FontSize="18" FontWeight="Bold" Grid.Column="1"/>
+        <Button x:Name="Materialtypes" Content="Тип материала" Margin="226,41,0,0" Grid.Column="1" FontSize="16" Click="Materialtypes_Click" HorizontalAlignment="Left" Width="116" Height="33" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="226,95,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="116" Height="33" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="226,151,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="116" Height="33" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="226,208,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="116" Height="33" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="226,260,0,0" Grid.Column="1" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="116"/>
     </Grid>
 </Window>
