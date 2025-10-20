@@ -13,9 +13,9 @@
         <Image x:Name="Logo" Height="108" Width="110" RenderTransformOrigin="-1.529,-0.235" Source="/Комфорт.png" Margin="38,41,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
         <Button x:Name="ExitToStartMenu_Копировать" Content="В МЕНЮ" Margin="0,0,24,27" Height="34" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="122" Click="Exit_Click" FontSize="18" FontWeight="Bold" Grid.Column="1"/>
         <Button x:Name="Materialtypes" Content="Тип материала" Margin="329,41,329,0" FontSize="16" Click="Materialtypes_Click" Height="33" VerticalAlignment="Top"/>
-        <Button Content="Button" Margin="329,95,329,0" Height="33" VerticalAlignment="Top"/>
-        <Button Content="Button" Margin="329,151,329,0" Height="33" VerticalAlignment="Top"/>
-        <Button Content="Button" Margin="329,208,329,0" Height="33" VerticalAlignment="Top"/>
-        <Button Content="Button" Margin="329,260,329,0" Height="33" VerticalAlignment="Top"/>
+        <Button x:Name="Producttypes" Content="Тип продукции" Margin="329,95,329,0" Height="33" VerticalAlignment="Top" FontSize="16" Click="Producttypes_Click"/>
+        <Button x:Name="WorkShops" Content="Цеха" Margin="329,151,329,0" Height="33" VerticalAlignment="Top" FontSize="16" Click="WorkShops_Click"/>
+        <Button x:Name="Products" Content="Продукция" Margin="329,208,329,0" Height="33" VerticalAlignment="Top" FontSize="16" Click="Products_Click"/>
+        <Button x:Name="Productworkshops" Content="Продукция (цех)" Margin="329,260,329,0" Height="33" VerticalAlignment="Top" FontSize="16" Click="Productworkshops_Click"/>
     </Grid>
 </Window>

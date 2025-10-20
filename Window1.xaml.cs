@@ -37,5 +37,33 @@ namespace WpfApp3
             window2.Show();
             this.Close();
         }
+
+        private void Producttypes_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 window3 = new Window3();
+            window3.Show();
+            this.Close();
+        }
+
+        private void WorkShops_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 window4 = new Window4();
+            window4.Show();
+            this.Close();
+        }
+
+        private void Products_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 window5 = new Window5();
+            window5.Show();
+            this.Close();
+        }
+
+        private void Productworkshops_Click(object sender, RoutedEventArgs e)
+        {
+            Window6 window6 = new Window6();
+            window6.Show();
+            this.Close();
+        }
     }
 }
